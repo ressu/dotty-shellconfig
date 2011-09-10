@@ -63,3 +63,4 @@ export rvm_make_flags="-j5"
 # export rvm_rbx_opt
 
 export rvm_pretty_print_flag=1
+export rvm_user_install_flag=1

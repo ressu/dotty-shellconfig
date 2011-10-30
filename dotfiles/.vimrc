@@ -15,7 +15,7 @@ Bundle "http://git.devnull.li/ikiwiki-syntax.git/"
 Bundle "Shougo/neocomplcache"
 Bundle "scrooloose/nerdtree"
 Bundle "cakebaker/scss-syntax.vim"
-Bundle "git://github.com/msanders/snipmate.vim.git"
+Bundle "msanders/snipmate.vim"
 Bundle "vim-scripts/TailMinusF"
 Bundle "tpope/vim-abolish"
 Bundle "kchmck/vim-coffee-script"
@@ -33,7 +33,6 @@ Bundle "sukima/xmledit"
 Bundle "tpope/vim-surround"
 Bundle "git://repo.or.cz/vcscommand"
 Bundle "sjl/gundo.vim"
-Bundle "scrooloose/nerdcommenter"
 Bundle "tpope/vim-endwise"
 Bundle "tsaleh/vim-matchit"
 Bundle "shemerey/vim-peepopen"
@@ -43,6 +42,18 @@ Bundle "ciaranm/securemodelines"
 Bundle "vim-scripts/bufexplorer.zip"
 Bundle "vim-scripts/pylint.vim"
 Bundle "majutsushi/tagbar"
+
+" tComment
+Bundle "tComment"
+nnoremap // :TComment<CR>
+vnoremap // :TComment<CR>
+
+" Zoomwin
+Bundle "ZoomWin"
+noremap <LocalLeader>o :ZoomWin<CR>
+vnoremap <LocalLeader>o <C-C>:ZoomWin<CR>
+inoremap <LocalLeader>o <C-O>:ZoomWin<CR>
+noremap <C-W>+o :ZoomWin<CR>
 
 " vundle required setting (and good to have)
 filetype plugin indent on
@@ -124,7 +135,7 @@ map <silent> <F3> :TlistToggle<CR>
 
 " Enable spell checking
 set spell
-set spelllang=en,fi
+" set spelllang=en,fi
 
 " Next Tab
 nnoremap <silent> <C-Right> :tabnext<CR>

@@ -42,6 +42,7 @@ Bundle "ciaranm/securemodelines"
 Bundle "vim-scripts/bufexplorer.zip"
 Bundle "vim-scripts/pylint.vim"
 Bundle "majutsushi/tagbar"
+Bundle "rvm.vim"
 
 " tComment
 Bundle "tComment"

@@ -8,7 +8,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My modules
-Bundle "ressu/dbext"
+Bundle 'dbext.vim'
 Bundle "Raimondi/delimitMate"
 Bundle "http://git.devnull.li/ikiwiki-nav.git"
 Bundle "http://git.devnull.li/ikiwiki-syntax.git/"
@@ -18,12 +18,14 @@ Bundle "cakebaker/scss-syntax.vim"
 Bundle "msanders/snipmate.vim"
 Bundle "vim-scripts/TailMinusF"
 Bundle "tpope/vim-abolish"
+Bundle "tpope/vim-bundler"
 Bundle "kchmck/vim-coffee-script"
 Bundle "tpope/vim-cucumber"
 Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-haml"
 Bundle "plasticboy/vim-markdown"
 Bundle "tpope/vim-rails"
+Bundle "tpope/vim-rake"
 Bundle "tpope/vim-repeat"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "kana/vim-textobj-user"
@@ -43,6 +45,7 @@ Bundle "vim-scripts/bufexplorer.zip"
 Bundle "vim-scripts/pylint.vim"
 Bundle "majutsushi/tagbar"
 Bundle "rvm.vim"
+Bundle 'SudoEdit.vim'
 
 " tComment
 Bundle "tComment"
@@ -97,11 +100,11 @@ if has("syntax")
   " Define colorscheme only if we have syntax enabled. Otherwise there is no
   " need
   set background=dark
-  colorscheme pablo
+  colorscheme blacksea
 endif
 
 if has("gui_running")
-	set guifont=Terminus\ 9
+	set guifont="Droid Sans Mono"
 endif
 
 " Set statusline to a slick little version

@@ -3,3 +3,7 @@
 	email = sami@haahtinen.name
 [github]
 	user = ressu
+[color]
+	diff = auto
+	status = auto
+	branch = auto

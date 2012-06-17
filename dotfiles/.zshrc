@@ -36,3 +36,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export EDITOR="vi"
 export PATH=/home/ressu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/ressu/.local/bin:/home/ressu/.rvm/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

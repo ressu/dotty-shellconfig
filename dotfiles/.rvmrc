@@ -62,5 +62,7 @@ export rvm_make_flags="-j5"
 # an Rubinius environment, set the value to '-Xagent'
 # export rvm_rbx_opt
 
+rvm_autoinstall_bundler_flag=1
+
 export rvm_pretty_print_flag=1
 export rvm_user_install_flag=1

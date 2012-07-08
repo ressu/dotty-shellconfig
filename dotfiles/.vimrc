@@ -44,8 +44,10 @@ Bundle "ciaranm/securemodelines"
 Bundle "vim-scripts/bufexplorer.zip"
 Bundle "vim-scripts/pylint.vim"
 Bundle "majutsushi/tagbar"
-Bundle "rvm.vim"
-Bundle 'SudoEdit.vim'
+Bundle "tpope/vim-rvm"
+Bundle "chrisbra/SudoEdit.vim"
+Bundle "scrooloose/syntastic"
+Bundle "Lokaltog/vim-powerline"
 
 " tComment
 Bundle "tComment"
@@ -107,10 +109,8 @@ if has("gui_running")
 	set guifont="Droid Sans Mono"
 endif
 
-" Set statusline to a slick little version
-" Show statusline only if there are more than one window open.
-set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
-set laststatus=1
+" Set statusline to always show
+set laststatus=2
 
 " Search options
 " - Use hilighted search as well as incremental search

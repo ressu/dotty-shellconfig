@@ -48,6 +48,7 @@ Bundle "tpope/vim-rvm"
 Bundle "chrisbra/SudoEdit.vim"
 Bundle "scrooloose/syntastic"
 Bundle "Lokaltog/vim-powerline"
+Bundle "seveas/bind.vim"
 
 " tComment
 Bundle "tComment"

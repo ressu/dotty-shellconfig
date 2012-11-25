@@ -49,6 +49,7 @@ Bundle "chrisbra/SudoEdit.vim"
 Bundle "scrooloose/syntastic"
 Bundle "Lokaltog/vim-powerline"
 Bundle "seveas/bind.vim"
+Bundle "bootleq/LargeFile"
 
 " tComment
 Bundle "tComment"
@@ -136,7 +137,7 @@ map <silent> <F3> :TlistToggle<CR>
 
 " Enable spell checking
 set spell
-" set spelllang=en,fi
+"set spelllang=en,fi
 
 " Next Tab
 nnoremap <silent> <C-Right> :tabnext<CR>
@@ -162,5 +163,8 @@ let g:neocomplcache_enable_at_startup = 1
 
 " Map <Leader>cd to something useful
 nnoremap <silent> <Leader>cd :lcd %:h<CR>
+
+" Fix special cases
+au FileType sshconfig setlocal nospell
 
 " vim: set ft=vim :

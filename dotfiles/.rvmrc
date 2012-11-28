@@ -47,7 +47,7 @@ export rvm_install_on_use_flag=1
 export rvm_gemset_create_on_use_flag=1
 
 # Make Flags, I have 8 cpu's so I might use 7 make threads:
-export rvm_make_flags="-j5"
+#export rvm_make_flags="-j5"
 
 # Automatically trust project .rvmrc files
 #  export rvm_trust_rvmrcs_flag=1

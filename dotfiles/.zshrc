@@ -29,12 +29,13 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(debian git git-flow gem bundler cap knife rvm vundle)
+plugins=(debian git git-flow gem bundler cap knife vundle)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export EDITOR="vi"
-export PATH=/home/ressu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/ressu/.local/bin:/home/ressu/.rvm/bin
+export PATH=/home/ressu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/ressu/.local/bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# Make cd behave in a more sane way
+setopt noautocd noautonamedirs nocdablevars

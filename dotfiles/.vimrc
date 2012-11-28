@@ -48,6 +48,8 @@ Bundle "tpope/vim-rvm"
 Bundle "chrisbra/SudoEdit.vim"
 Bundle "scrooloose/syntastic"
 Bundle "Lokaltog/vim-powerline"
+Bundle "seveas/bind.vim"
+Bundle "bootleq/LargeFile"
 
 " tComment
 Bundle "tComment"
@@ -63,6 +65,9 @@ noremap <C-W>+o :ZoomWin<CR>
 
 " vundle required setting (and good to have)
 filetype plugin indent on
+
+" Use ~/tmp/ as swapfile storage if it exists
+set directory^=~/tmp//
 
 set helplang=en
 
@@ -84,13 +89,6 @@ set expandtab smarttab
 
 " Store global variables
 set viminfo^=!
-
-" Set filetype plugin on if autocmd is available
-if has("autocmd")
-  filetype plugin indent on
-else
-	set smartindent
-endif
 
 " Use wilmenu, it's handy
 set wildmode=longest:full
@@ -142,7 +140,7 @@ map <silent> <F3> :TlistToggle<CR>
 
 " Enable spell checking
 set spell
-" set spelllang=en,fi
+"set spelllang=en,fi
 
 " Next Tab
 nnoremap <silent> <C-Right> :tabnext<CR>
@@ -168,5 +166,8 @@ let g:neocomplcache_enable_at_startup = 1
 
 " Map <Leader>cd to something useful
 nnoremap <silent> <Leader>cd :lcd %:h<CR>
+
+" Fix special cases
+au FileType sshconfig setlocal nospell
 
 " vim: set ft=vim :

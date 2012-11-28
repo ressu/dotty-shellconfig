@@ -130,6 +130,9 @@ set hidden
 " Open buffers in tabs
 set switchbuf=usetab,newtab
 
+" Move .swp files from the current directory to a common directory
+set directory^=~/tmp//
+
 "Make NERC_commenter shut up about unkown filetypes
 let NERDShutUp=1
 
